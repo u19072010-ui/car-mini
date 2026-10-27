@@ -1,0 +1,554 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2PX 40px;
+    background-color: brown;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 75px;
+    transition: 0.4s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    transition: 0.4s;
+    padding: 13px 15px;
+}
+
+nav a:hover {
+
+
+    color: white;
+    border-radius: 16px;
+    background-color: #f5f1e8;
+    color: #3b2a1a;
+
+
+}
+
+.nav_btn a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    padding: 13px 15px;
+    color: white;
+    border-radius: 16px;
+    transition: 0.4s;
+}
+
+/* navbar section end */
+
+.intro_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+}
+
+.right {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left h4 {
+    color: brown;
+}
+
+.left h2 {
+    font-size: 36px;
+
+}
+
+.buton {
+    margin-top: 20px;
+}
+
+.btn {
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: brown;
+    padding: 10px 13px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.btn-success {
+    background-color: green;
+}
+
+.car_heading,
+.contact_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.car_heading h1 {
+    font-size: 36px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    padding: 15px 8px;
+    flex-direction: column;
+    box-shadow: 1px 2px 11px 2px black;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+
+.card img {
+
+    object-fit: cover;
+
+}
+
+.book {
+    background-color: brown;
+    padding: 8px 14px;
+    width: fit-content;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+
+}
+
+.listing_section {
+    padding: 56px 86px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact_heading h1 {
+    font-size: 36px;
+}
+
+.main_contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.let_info {
+    color: white;
+    background-color: brown;
+    width: 40%;
+    padding: 35px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_no,
+.address,
+.mail_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.right_form {
+    background-color: gray;
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+
+    border-radius: 10px;
+
+}
+
+form {
+    padding: 50px 10px;
+}
+
+.input_field {
+    padding: 15px 10px;
+}
+
+.input_field input {
+    width: 600px;
+    padding: 17px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.input_field textarea {
+    width: 600px;
+    padding: 17px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.right_form h2 {
+    padding: 0px 20px;
+}
+
+.right_form button {
+    width: 600px;
+    padding: 17px 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.right_form button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* ====== GLOBAL RESPONSIVE FIXES ====== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    nav ul li a {
+        padding: 8px 10px;
+    }
+
+    .input_field input {
+        width: 300px;
+        padding: 17px 15px;
+    }
+
+    .input_field textarea {
+        width: 300px;
+        padding: 17px 15px;
+    }
+
+    .right_form button {
+        width: 300px;
+    }
+
+    .right_form {
+        padding: 15px;
+        width: 35%;
+    }
+
+    .right_form h2 {
+        margin: auto;
+    }
+
+    .listing_section {
+    padding: 20px 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.let_info {
+    color: white;
+    background-color: brown;
+    width: 35%;
+    padding: 20px 15px;
+   
+}
+
+.contact_no,
+.address,
+.mail_info {
+   
+    padding: 25 px;
+    width: 300px;
+
+    gap: 10px;
+}
+}
+
+
+@media (max-width:1000px) {
+    
+
+    .input_field input {
+        width: 220px;
+        padding: 17px 15px;
+    }
+
+    .input_field textarea {
+        width: 220px;
+        padding: 17px 15px;
+    }
+
+    .right_form button {
+        width: 220px;
+    }
+
+    .right_form {
+        padding: 15px;
+        width: 30%;
+    }
+
+    .right_form h2 {
+        margin: auto;
+    }
+
+    .listing_section {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.let_info {
+    color: white;
+    background-color: brown;
+    width: 35%;
+    padding: 20px 15px;
+   
+}
+
+.contact_no,
+.address,
+.mail_info {
+   
+    padding: 25px;
+    width: 250px;
+    gap: 10px;
+}
+
+}
+/* ====== TABLET (max-width: 992px) ====== */
+@media (max-width: 890px) {
+
+ nav {
+        position: relative;
+    }
+
+    .menu {
+        display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    /* DEFAULT hidden state using max-height */
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: brown;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 21px;
+        padding: 0 48px; /* top/bottom padding remove for smooth slide */
+        max-height: 0;       /* hidden */
+        overflow: hidden;    /* hide extra content */
+        transition: max-height 0.5s ease; /* smooth transition */
+    }
+
+    nav ul li {
+        padding: 15px 0; /* menu item spacing */
+    }
+
+    /* ACTIVE state */
+    nav ul.active {
+        max-height: 500px; /* adjust based on number of items */
+        padding: 20px 48px;
+    }
+
+    .intro_section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .listing_section {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .main_contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .let_info,
+    .right_form {
+        width: 50%;
+    }
+
+    .contact_no,
+    .address,
+    .mail_info {
+        width: 90%;
+    }
+
+    .input_field input,
+    .input_field textarea,
+    .right_form button {
+        width: 100%;
+    }
+}
+
+/* ====== MOBILE (max-width: 576px) ====== */
+@media (max-width: 576px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .left h2 {
+        font-size: 26px;
+    }
+
+    .car_heading h1,
+    .contact_heading h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .listing_section {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .buton {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    .right {
+        height: auto;
+    }
+
+    
+    .listing_section {
+    padding: 20px 0px;
+
+}
+
+.let_info {
+    color: white;
+    background-color: brown;
+    width: 250px;
+    padding: 10px 2px;
+   
+}
+
+.contact_no,
+.address,
+.mail_info {
+   
+    padding: 20px ;
+    
+    gap: 10px;
+}
+
+  .input_field input {
+        width: 200px;
+        padding: 17px 15px;
+    }
+
+    .input_field textarea {
+        width: 200px;
+        padding: 17px 15px;
+    }
+
+    .right_form button {
+        width: 200px;
+    }
+
+    .right_form {
+        padding: 15px;
+        width: 250px;
+    } 
+}

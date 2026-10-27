@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="hLZFslPHAVL5jGNkS2WpqDxdhQm6mL5-iPe-nDFH2KQ" />
+    <title>Car Sevrvics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav_links">
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">About</a></li>
+            <li><a href="#" class="nav_link">Services</a></li>
+            <li><a href="#" class="nav_link">Contact</a></li>
+            <li class="nav_btn">
+                <a href="#">Book Now</a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+    <seciton class="intro_section">
+        <div class="left">
+            <h4> Car Project </h4>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore temporibus aut, quis esse odio
+                dolore nesciunt porro excepturi similique, voluptates cum dignissimos perferendis. Magni, iure? Ipsam
+                possimus tempore iste.</p>
+
+            <div class="buton">
+                <a href="#" class="btn">Contact Us </a>
+                <a href="#" class="btn btn-success">Shop Now</a>
+
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/car1.png" alt="car1">
+        </div>
+    </seciton>
+
+    <section class="cars_listing">
+        <div class="car_heading">
+            <h1>Our Best Cars</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, consequatur!</p>
+        </div>
+
+        <div class="listing_section">
+            <div class="card">
+                <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_375,h_250,q_auto,c_fill,f_auto,fl_lossy/auto-client/e9e0fdecdd6a189671cee446da4bb511/model_page.jpg"
+                    alt="BMW">
+                <h3>The XM</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="book">Book Now</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_375,h_250,q_auto,c_fill,f_auto,fl_lossy/auto-client/5c743e650f9e8eeee05353df09ee656d/model_page_banner.jpg"
+                    alt="BMW">
+                <h3>
+                    The New 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="book">Book Now</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_375,h_250,q_auto,c_fill,f_auto,fl_lossy/auto-client/ef402948c10177d948d03fdb4f328827/model_page_banner.jpg"
+                    alt="BMW">
+                <h3>
+                    The M3 Competition</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="book">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_section">
+        <div class="contact_heading">
+            <h1>Get in Touch Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="main_contact">
+
+
+            <div class="let_info">
+                <div class="contact_no">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Contact Us</h3>
+                    <p>021-21313235</p>
+                </div>
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Address</h3>
+                    <p>Orangi town karachi</p>
+                </div>
+                <div class="mail_info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>yasir@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="right_form">
+                <h2>Get in Touch</h2>
+                <form action="">
+                    <div class="input_field">
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="input_field">
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="input_field">
+                        <textarea name="message" id="" placeholder="Message"></textarea>
+                    </div>
+
+                    <button>Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+<script>
+    const menuBtn = document.querySelector(".menu");
+    const navLinks = document.querySelector("nav ul");
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+
+</html>
